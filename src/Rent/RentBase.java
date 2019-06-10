@@ -29,7 +29,7 @@ public class RentBase {
 
     private void checkAvailableVehicle(VehicleAble vehicle) throws NotFoundVehicleException {
         if (!this.getFreeVehicles().contains(vehicle)) {
-            throw new NotFoundVehicleException("\u001B[31mPojazd nie jest dostępny!\u001B[31m");
+            throw new NotFoundVehicleException("Pojazd nie jest dostępny!");
         }
     }
 
