@@ -29,7 +29,7 @@ public class RentBase {
 
     private void checkAvailableVehicle(VehicleAble vehicle) throws NotFoundVehicleException {
         if (!this.getFreeVehicles().contains(vehicle)) {
-            throw new NotFoundVehicleException();
+            throw new NotFoundVehicleException("\u001B[31mPojazd nie jest dostępny!\u001B[31m");
         }
     }
 
@@ -39,9 +39,7 @@ public class RentBase {
             RentedVehicle rentCar = new RentCar(vehicle, days);
             this.rentVehicles.add(rentCar);
         } catch (NotFoundVehicleException e) {
-            System.out.println("\u001B[31mPojazd nie jest dostępny!\u001B[31m");
-            vehicle.printInformation();
-            System.out.println("------------------------------");
+            e.printStackTrace();
         }
     }
 

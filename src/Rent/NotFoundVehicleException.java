@@ -4,7 +4,7 @@
 package Rent;
 
 public class NotFoundVehicleException extends Exception {
-    NotFoundVehicleException() {
-        super();
+    NotFoundVehicleException(String message) {
+        super(message);
     }
 }
