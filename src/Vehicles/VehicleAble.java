@@ -1,7 +1,7 @@
 package Vehicles;
 
 /**
- * @author TheArczi
+ * @author WASYL
  */
 public interface VehicleAble {
     int getDayPrice();

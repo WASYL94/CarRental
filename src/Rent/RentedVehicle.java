@@ -1,5 +1,8 @@
 package Rent;
 
+/**
+ * @author WASYL
+ */
 import Vehicles.VehicleAble;
 
 abstract class RentedVehicle {

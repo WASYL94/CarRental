@@ -1,12 +1,12 @@
 package Rent;
 
+/**
+ * @author WASYL
+ */
 import Vehicles.VehicleAble;
 
 import java.util.ArrayList;
 
-/**
- * @author TheArczi
- */
 public class RentBase {
     private ArrayList<VehicleAble> vehicles;
     private ArrayList<RentedVehicle> rentVehicles;
@@ -40,7 +40,7 @@ public class RentBase {
             RentedVehicle rentCar = new RentCar(vehicle, days);
             this.rentVehicles.add(rentCar);
         } catch (NotFoundVehicleException e) {
-            System.out.println("\u001B[31mPojazd nie jest dostępny!");
+            System.out.println("\u001B[31mPojazd nie jest dostępny!\u001B[31m");
             vehicle.printInformation();
             System.out.println("------------------------------");
             e.printStackTrace();
@@ -58,7 +58,7 @@ public class RentBase {
                 System.out.println();
             }
         } else {
-            System.out.println("- BRAK - ");
+            System.out.println("- BRAK -");
             System.out.println();
         }
     }
@@ -72,7 +72,7 @@ public class RentBase {
                 System.out.println();
             }
         } else {
-            System.out.println("- BRAK - ");
+            System.out.println("- BRAK -");
             System.out.println();
         }
     }
@@ -86,7 +86,7 @@ public class RentBase {
                 System.out.println();
             }
         } else {
-            System.out.println("- BRAK - ");
+            System.out.println("- BRAK -");
             System.out.println();
         }
     }

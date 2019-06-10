@@ -1,7 +1,7 @@
 package Vehicles;
 
 /**
- * @author TheArczi
+ * @author WASYL
  */
 public class Car implements VehicleAble {
     private String plate;
