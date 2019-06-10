@@ -1,13 +1,13 @@
-package Rent;
-
 /**
  * @author WASYL
  */
+package Rent;
+
 import Vehicles.VehicleAble;
 
 abstract class RentedVehicle {
-    private VehicleAble vehicle;
-    private int rentDays;
+    private final VehicleAble vehicle;
+    private final int rentDays;
     private int rentPrice;
 
     RentedVehicle(VehicleAble vehicle, int days) {

@@ -1,15 +1,14 @@
-package Rent;
-
 /**
  * @author WASYL
  */
-import Vehicles.VehicleAble;
+package Rent;
 
+import Vehicles.VehicleAble;
 import java.util.ArrayList;
 
 public class RentBase {
-    private ArrayList<VehicleAble> vehicles;
-    private ArrayList<RentedVehicle> rentVehicles;
+    private final ArrayList<VehicleAble> vehicles;
+    private final ArrayList<RentedVehicle> rentVehicles;
 
     public RentBase() {
         this.vehicles = new ArrayList<>();
@@ -43,8 +42,6 @@ public class RentBase {
             System.out.println("\u001B[31mPojazd nie jest dostępny!\u001B[31m");
             vehicle.printInformation();
             System.out.println("------------------------------");
-            e.printStackTrace();
-            System.exit(0);
         }
     }
 
@@ -52,6 +49,7 @@ public class RentBase {
     public void printAvailableVehicles() {
         System.out.println("------------------------------");
         System.out.println("Dostępne pojazdy: ");
+        System.out.println();
         if (!this.getFreeVehicles().isEmpty()) {
             for (VehicleAble vehicleAble : this.getFreeVehicles()) {
                 vehicleAble.printInformation();
@@ -66,6 +64,7 @@ public class RentBase {
     public void printAllVehicles() {
         System.out.println("------------------------------");
         System.out.println("Wszystkie pojazdy: ");
+        System.out.println();
         if (!this.vehicles.isEmpty()) {
             for (VehicleAble vehicleAble : this.vehicles) {
                 vehicleAble.printInformation();
@@ -80,6 +79,7 @@ public class RentBase {
     public void printRentedVehicles() {
         System.out.println("------------------------------");
         System.out.println("Wynajęte pojazdy: ");
+        System.out.println();
         if (!this.rentVehicles.isEmpty()) {
             for (RentedVehicle rentedVehicle : this.rentVehicles) {
                 rentedVehicle.printInformation();

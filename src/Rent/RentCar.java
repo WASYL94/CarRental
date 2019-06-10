@@ -1,8 +1,8 @@
-package Rent;
-
 /**
  * @author WASYL
  */
+package Rent;
+
 import Vehicles.VehicleAble;
 
 class RentCar extends RentedVehicle {
