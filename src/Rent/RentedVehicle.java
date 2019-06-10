@@ -1,9 +1,10 @@
-/**
- * @author WASYL
- */
 package Rent;
 
 import Vehicles.VehicleAble;
+
+/**
+ * @author WASYL
+ */
 
 abstract class RentedVehicle {
     private final VehicleAble vehicle;

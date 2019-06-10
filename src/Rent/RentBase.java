@@ -1,10 +1,11 @@
-/**
- * @author WASYL
- */
 package Rent;
 
 import Vehicles.VehicleAble;
 import java.util.ArrayList;
+
+/**
+ * @author WASYL
+ */
 
 public class RentBase {
     private final ArrayList<VehicleAble> vehicles;

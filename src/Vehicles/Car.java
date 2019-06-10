@@ -1,9 +1,10 @@
-/**
- * @author WASYL
- */
 package Vehicles;
 
 import java.text.NumberFormat;
+
+/**
+ * @author WASYL
+ */
 
 public class Car implements VehicleAble {
     private final String mark;

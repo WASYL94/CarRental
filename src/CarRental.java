@@ -1,8 +1,9 @@
+import Rent.RentBase;
+import Vehicles.Car;
+
 /**
  * @author WASYL
  */
-import Rent.RentBase;
-import Vehicles.Car;
 
 public class CarRental {
     public static void main(String[] args) {
