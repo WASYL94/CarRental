@@ -14,7 +14,7 @@ abstract class RentedVehicle {
     RentedVehicle(VehicleAble vehicle, int days) {
         this.vehicle = vehicle;
         this.rentDays = days;
-        this.calculatePrice();
+        calculatePrice();
     }
 
     private void calculatePrice() {

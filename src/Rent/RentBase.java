@@ -18,7 +18,7 @@ public class RentBase {
 
     private ArrayList<VehicleAble> getFreeVehicles() {
         ArrayList<VehicleAble> freeVehicles = new ArrayList<>(this.vehicles);
-        for (RentedVehicle rentVehicle : rentVehicles) {
+        for (RentedVehicle rentVehicle : this.rentVehicles) {
             freeVehicles.remove(rentVehicle.getVehicle());
         }
         return freeVehicles;

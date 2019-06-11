@@ -16,8 +16,8 @@ public class CarRental {
         rentBase.addVehicle(car2);
         rentBase.addVehicle(car3);
 
-        rentBase.rentCar(car1, 5);
-        rentBase.rentCar(car2, 5);
+        rentBase.rentCar(car1, 15);
+        rentBase.rentCar(car2, 10);
         rentBase.rentCar(car3, 5);
 
         rentBase.printAvailableVehicles();
